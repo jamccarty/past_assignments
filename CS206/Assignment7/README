@@ -1,0 +1,75 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    HybridQuickSort.java
+    QuickSort.java
+    Selection.java
+    SortBase.java
+	
+How to Compile:
+===============
+Part 1:
+    javac QuickSort.java
+Part 2:
+    javac HybridQuickSort.java
+       
+How to Run:
+===========
+Part 1:
+    java QuickSort 1000 true
+        1000 refers to size of array 
+        true refers to whether or not program will print sorted and unsorted array
+        (if false will not print)
+    java HybridQuickSort 1000 true
+        1000 refers to size of array 
+        true refers to whether or not program will print sorted and unsorted array
+        (if false will not print)
+	
+Reflection:
+===========
+    This assignment challenged me. I had a hard time figuring out how to make the QuickSort
+    sort through all of the array locations -- it kept on leaving one or two very small numbers
+    at the very end. I finally ended up figuring out that this was because whenever it switched the "loc" and 
+    "i" locations, the original array[loc] would follow "i" whenever the loc variable was incremented. I honestly don't
+    remember exactly what I did to fix this, but I do know that whatever it was often left several units unsorted on 
+    the "larger" side. I ended up fixing this by orchestrating three way swaps with any "smaller units" left on the 
+    "larger" side so that the "mid-value" would stay between the designated smaller and larger sides, but the smaller
+    value could still be on the right side. 
+
+    Size of Array       QuickSort avg time      HybridQuickSort avg time
+    10,000              9.9 ms                  7.4 ms 
+    40,000              15.15 ms                18.4 ms
+    160,000             35.95 ms                31.6 ms
+    640,000             92.3 ms                 87.15 ms
+    2,560,000           324.95 ms               326.2 ms
+    10,240,000          1553.05 ms              1563.35 ms
+
+    The Hybrid QuickSort is usually faster than the regular Quicksort because on small data sizes, Insertion Sort 
+    doesn't have the added time from recursive calls that Quicksort does -- and in smaller sizes, the O(n^2) is not
+    quite so drastic. Because Hybrid QuickSort uses Insertion when it gets down to smaller data sets, it is faster.
+
+I Worked With:
+==============
+    Me, myself, and I.
+
+Approximate Hours worked:
+=========================
+    ~ 6 hours
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    I kept on getting an error:
+    HybridQuickSort.java is not on the classpath of project Assignment7_6ad77cad, only syntax errors are reportedJava(32)
+    I fixed it by copying all the code to a new folder and redownloading the Selection.java and SortBase.java files.
+    I'm still not sure why this happened.

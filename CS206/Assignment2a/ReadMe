@@ -1,0 +1,63 @@
+NAME:
+=====
+        Jacqueline McCarty (jmccarty)
+
+Programs Files:
+===============
+    Part 1: 
+        Place.java, Places.java, uszipcodes.csv
+
+How to Compile:
+===============
+    Part 1:
+        javac Place.java
+    Part 2:
+        javac Places.java
+
+How to Run:
+===========
+    Part 1:
+        java Place
+    Part 2:
+        java Places (contains main method)
+
+Reflection:
+===========
+    I feel this project went fairly well. There was a brief
+    hiccup where it appeared to crash for no reason when it
+    had previously run (and when there had been no additional 
+    changes made), but this was resolved by restarting my computer
+    and has not reoccurred since. This assignment helped me in 
+    gaining a greater understanding of the various merits of
+    throwing exceptions rather than just catching them then and there,
+    which I appreciate, as I did not understand why someone would throw 
+    when catching in-method was an option. The part I struggled with 
+    the most was creating a method of exiting the program. At first, I was
+    going to create a question prompt after every searched zip code, in which
+    the terminal would prompt the user to answer with y or n on whether or not
+    they would like to continue. However, I ran into difficulties when 
+    many of my attempts resulted in infinite loops or simply not running the loop
+    at all, so I ultimately decided it would be simpler to just include an 'exit'
+    condition.
+
+I Worked With:
+==============
+    Bailey Hirota (bhirota) and I discussed strategies for handling exceptions
+    and in-line comments.
+
+Approximate Hours Worked:
+=========================
+    A little under 4 hours.
+
+Special instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    As mentioned before, this code did crash for unknown reasons.
+    This was resolved by restarting my computer and has not reoccured,
+    so I am fairly confident it will not happen again.
+
+
+

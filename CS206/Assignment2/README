@@ -1,0 +1,63 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    Part 1:
+        Place.java, LocatedPlace.java, PopulatedPlace.java, Places.java, ziplocs.csv
+	
+How to Compile:
+===============
+    Part 1:
+        javac Place.java
+    Part 2:
+        javac LocatedPlace.java
+    Part 3:
+        javac PopulatedPlace.java
+    Part 4:
+        javac Places.java
+       
+How to Run:
+===========
+    Part 1:
+    	java Places (contains main())
+	
+Reflection:
+===========
+    This assignment was quite a bit harder for me than last week's. This was largely due to my 
+    overall inexperience working with ArrayLists as a data structure; however, I also ran into 
+    difficulties sorting the data from the .csv file. The shortest location inputs
+    (the ones missing population, latitude, and longitude) kept on reading as the same length
+    as the locations missing only population. I finally resolved this by just specifying that 
+    the short locations would have two empty slots in their array -- that way I could accurately judge
+    which locations would create a Place (as opposed to a LocatedPlace or PopulatedPlace). Similarly,
+    I ran into an issue with determining when the file length ended. I had to go to a TA session to
+    figure it out, but it turned out I had just forgotten one of the String methods specifically for this 
+    purpose. I'll be sure to remember these techniques for last time, as I struggled over both of them for 
+    an embarassingly long time.
+
+    Bonus note, I again ran into that bizarre exception type that only resolved when I restarted my computer.
+    It does seem to only be a problem on my end. If you're interested, it was a TransportTimeoutException 
+    (exit code: 256).
+
+
+I Worked With:
+==============
+    Sarah (TA), on determining how to tell when file was finished.
+
+Approximate Hours worked:
+=========================
+    A little under 5 hours.
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    None.

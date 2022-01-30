@@ -1,0 +1,51 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    Puzzle.java, samplePuzzle.txt, towellSudoku.txt
+	
+How to Compile:
+===============
+    javac Puzzle.java
+       
+How to Run:
+===========
+    java Puzzle towellSudoku.txt
+        OR 
+    java Puzzle 
+        (will run using samplePuzzle.txt)
+Reflection:
+===========
+    This assignment made me feel incredibly frustrated. That's all there is to it. I spent an embarassingly 
+    long amoung of time trying to figure out a viable recursion solve() method using the pseudocode on the 
+    website, but it seemed like no matter which way I turned, I kept on running into infinite loops. 
+    Eventually, I just decided to say screw it and abandoned working from the pseudocode structure entirely. 
+    I think the new method I ended up using is a lot more intuitive, and a lot less likely to give me an infinite 
+    terminal, a chronically hot computer, or a half-filled-out, largely inaccurate "solved" sudoku puzzle. 
+    I also ended up regretting putting everything in one gigantic class; however this was not
+    enough to make me split it up into more several, more managably-sized ones, so take out of that what
+    you will.
+
+
+I Worked With:
+==============
+    Brooke Barton (@bbarton)
+    Geoffrey Towell (@gtowell)
+
+Approximate Hours worked:
+=========================
+    15 (I did say it took an embarassingly long time)
+
+Special Instructions to the grader:
+===================================
+    None
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    Thank you for meeting with us on Sunday night. 

@@ -1,0 +1,51 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    AbstractPriorityQueue.java
+    BinaryHeap.java
+    PriorityQueueInterface.java
+    TernaryHeap.java
+	
+How to Compile:
+===============
+    javac TernaryHeap.java
+       
+How to Run:
+===========
+    java TernaryHeap
+	
+Reflection:
+===========
+    This assignment went far more smoothly than last week's (thank you). I feel like I have a pretty good
+    understanding of heaps now, to the point where I wish I'd known about them earlier (as I think they
+    could have proved very useful on some of the past assignments). I ran into a bit of trouble with inheritance
+    as some of the functions would call BinaryHeap's size and backArray, and some would call TernaryHeap's -- which
+    led to a variety of problems including but not limited to me thinking my offer() method wasn't working when it 
+    actually was, me thinking the offer() method WAS working but something was spontaneously deleting it before I 
+    could peek() at backArray's contents, and me thinking I'd somehow screwed up extending the class so that it
+    couldn't actually call super methods -- but switching BinaryHeap.size and BinaryHeap.backArray to protected 
+    instance variables rather than private ones managed to resolve all of these. 
+
+I Worked With:
+==============
+    Me, myself, and I.
+
+Approximate Hours worked:
+=========================
+    ~ 3 hours
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    Who is Jane? Is this another reference to an 80s movie? I tried googling the phrase, but uh. The results
+    were not very helpful.

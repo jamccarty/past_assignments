@@ -1,0 +1,96 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    Name.java
+    NameSorter.java
+    SortedLinkedList.java
+    SortedNamesList.java
+    names1990.csv
+    names1991.csv
+    names1992.csv
+    names1993.csv
+    names1994.csv
+    names1995.csv
+    names1996.csv
+    names1997.csv
+    names1998.csv
+    names1999.csv
+    names2000.csv
+    names2001.csv
+    names2002.csv
+    names2003.csv
+    names2004.csv
+    names2005.csv
+    names2006.csv
+    names2007.csv
+    names2008.csv
+    names2009.csv
+    names2010.csv
+    names2011.csv
+    names2012.csv
+    names2013.csv
+    names2014.csv
+    names2015.csv
+    names2016.csv
+    names2017.csv
+	
+How to Compile:
+===============
+    javac Name.java
+    javac SortedLinkedList.java
+    javac SortedNamesList.java
+    javac NameSorter.java
+       
+How to Run:
+===========
+    Run with no command line arguments to use all .csv files listed above. To use different files
+    (or to choose specific ones), list file names as command line arguments:
+        java NameSorter names2001.csv names2002.csv names2003.csv
+            OR 
+        java NameSorter
+	
+Reflection:
+===========
+    This one was a rough one for me. The amount of NullPointerExceptions I kept throwing up
+    was actually extraordinary, and figuring out how to make an add() method that would work
+    in all scenarios WITHOUT splashing 8000 NullPointers across the terminal took the better
+    part of six hours. Even after I figured this out, I ran into a very strange issue where
+    a good quarter of all added names spontaneously vanished upon adding them. I finally tracked
+    this down to a part in the add() method that failed to link the previous node and the new one
+    when a specific set of circumstances were met. Again, this took approximately four hours.
+    It was very frustrating, because it seemed on the outside that this assignment would be a 
+    relatively simple one, but the debugging portion easily tripled my overall time spent on it.
+    I suppose I do understand Linked Lists better now though, so there's always a silver lining.
+
+
+I Worked With:
+==============
+    Brooke Barton (@bbarton)
+
+Approximate Hours worked:
+=========================
+    I honestly didn't keep track post hour 6, but I think, rounding up, about 15
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    Cannot import files from other locations (i.e. /home/gtowell/Public/206/a9/FILENAME).
+
+    Filenames must be formatted in a very specific way -- "namesXXXX.csv" with XXXX signifying
+    the year -- or program will not run correctly (although, and I must specify this, it 
+    won't crash either). This is because I extract the year (int) from the file name by 
+    subtracting the "names" and ".csv" parts of the inputted String.
+
+    Likewise, no matter how long the file actually IS, this program will still record things as 
+    being in the "top 1000" names. It will record all data within files accurately, but will 
+    still print to the terminal "Years within top 1000 names."
+
+Other comments:
+===============
+    None.

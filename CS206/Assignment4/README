@@ -1,0 +1,76 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    Part 1:
+        StackIntf.java
+        ArraySttackHW5.java
+    Part 2:
+        File2String.java
+        PalindromeFinder.java
+        testpals.txt
+    Part 3:
+        UndoWithStacks.java
+	
+How to Compile:
+===============
+    Part 1:
+        javac StackIntf.java
+        javac ArrayStackHW5.java
+    Part 2:
+        javac File2String.java
+        javac PalindromeFinder.java
+    Part 3:
+        javac UndoWithStacks.java
+       
+How to Run:
+===========
+    Part 1:
+        java ArrayStackHW5 (there is a main() method within for testing purposes)
+    Part 2:
+    	java PalindromeFinder testpals.txt
+    Part 3:
+        java UndoWithStacks
+	
+Reflection:
+===========
+    This assignment was a relief, especially after the trials and tribulations
+    of the last one. My biggest issue was figuring out how to use the Stacks
+    in a meaningful and helpful way. I got stuck on a plan that would have easily
+    been O(n^2) or O(n^3), but luckily I couldn't figure out how to actually make it
+    work, so I had to scrap it and approach the issue from a different angle. After that
+    most of my issues could be traced back to a single NullPointerException (and one
+    ArrayOutOfBoundsException that I figured out quickly enough) that ended up originating
+    from an ArrayList that I failed to initialize. Overall, this assignment was far easier
+    than the last one, although it still proved enough of a challenge to feel worthwhile.
+
+    The extra credit assignment was also fun, as I enjoyed revisiting the Scanner function.
+    I ran into a bit of a snag when I couldn't figure out how to make the program take multiple
+    lines of input at once, and I did have to rewrite almost all of my code to make it work,
+    but I figured it out in the end. Sometimes, you just gotta delete everything and start over,
+    and I'm kind of mad I didn't do it earlier, as I wasted waaaay too long trying to make unworkable
+    code do something else, and when I finally caved and just rewrote it from scratch, I figured it
+    out within fifteen minutes.
+
+
+I Worked With:
+==============
+    Bailey Hirota (bhirota)
+
+Approximate Hours worked:
+=========================
+    About 6.5 hours.
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    Thanks for giving us the make-up questions for midterm one -- they were deeply appreciated.

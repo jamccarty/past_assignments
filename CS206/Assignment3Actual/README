@@ -1,0 +1,103 @@
+NAME:
+=====
+	Jac McCarty
+
+Programs Files:
+===============
+    Part 1:
+        BookReader.java
+        Map206Interface.java
+        Map206.java
+        MapCounter.java
+        janeausten.txt
+    Part 2:
+        BookReader.java
+        SepChainHT.java
+        ChainCounter.java
+        janeausten.txt
+    Part 3:
+        BookReader.java
+        ProbeHTInc.java
+        ProbeCounter.java
+        janeausten.txt
+    Part 4:
+        BookReader.java
+        HashCounter.java
+        janeausten.txt
+	
+How to Compile:
+===============
+    Part 1:
+        javac BookReader.java
+        javac Map206Interface.java
+        javac Map206.java
+        javac MapCounter.java
+    Part 2:
+        javac BookReader.java
+        javac SepChainHT.java
+        javac ChainCounter.java
+    Part 3:
+        javac BookReader.java
+        javac ProbeHTInc.java
+        javac ProbeCounter.java
+    Part 4:
+        javac BookReader.java
+        javac HashCounter.java
+       
+How to Run:
+===========
+    Please input the name of the text file you want to read as a runtime argument.
+      Part 1:
+    	  java MapCounter janeausten.txt
+      Part 2:
+        java ChainCounter.java janeausten.txt
+      Part 3:
+        java ProbeCounter janeausten.txt
+      Part 4:
+        java HashCounter janeausten.txt
+	
+Reflection:
+===========
+    Approximate time taken for each program on my computer: 
+    MapCounter - 1606 ms, ChainCounter - 1566 ms, ProbeCounter - 834 ms, HashCounter - 644 ms.
+
+    I would just like to say up front that my BookReader class separates words by hyphens as well
+    as by spaces/the usual punctuation. This is solely because I do not believe sam-i-am should be classified 
+    as a single word. Any discrepancies in word counts can likely be attributed to this, as I tested it 
+    against your example Sam-I-Am pairs, and the numbers did eventually match up.
+    
+    With that said, these programs took an embarassingly long time to figure out. The sort() method alone 
+    took me at least three or four hours, and I ran through several possible iterations (all of which 
+    did not work) before I found one that functioned without throwing NullPointerExceptions in every direction 
+    like some sort of malfunctioning blender. The method I finally settled on DID overrely on editing the 
+    source code for SepChainHT, ProbeHTInc, and Map206 to create methods that returned all the keys and values
+    as ArrayLists (I've documented these changes in all of these classes' header comments). I did end up 
+    finding a method that did NOT require this when I wrote HashCounter.java, and it WOULD have worked for the
+    others, but I'm choosing to stick by my earlier decisions. Speaking of NullPointerExceptions, I have
+    learned to hate them with a passion throughout the course of this assignment. Figuring out where they
+    were coming from and how to fix them accounts for nearly half the time I spent working on it. 
+    In the end, I did enjoy this assignment, as working through the various challenges was certainly... 
+    challenging. I definitely felt very rushed at the end though, as I was not expecting it to take as nearly 
+    as long as it did.
+
+
+I Worked With:
+==============
+    Bailey Hirota (bhirota)
+    One of the TAs from Thursday -- I can't remember their name, sorry
+
+Approximate Hours worked:
+=========================
+    10-11 hours.
+
+Special Instructions to the grader:
+===================================
+    None.
+
+Known Bugs or Limitations:
+==========================
+    None.
+
+Other comments:
+===============
+    This was really hard.
